@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大词典 - 坚持客观真理</title>
+    <meta name="description" content="龙泉中学高2020级8班班级词典 - 编纂者：陈曦">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Mobile Sidebar Toggle -->
+    <button class="sidebar-toggle" id="sidebar-toggle" aria-label="目录">☰</button>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">🌙</button>
+
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>大词典</h2>
+            <div class="subtitle">坚持客观真理</div>
+        </div>
+        <div class="sidebar-search">
+            <input type="text" id="sidebar-search" placeholder="搜索词条…">
+        </div>
+        <nav>
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <!-- Populated by JS -->
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ===== Main Content ===== -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero" id="top">
+            <h1 class="hero-title">大 词 典</h1>
+            <p class="hero-subtitle">坚 持 客 观 真 理</p>
+            <div class="hero-divider"></div>
+            <p class="hero-author">编纂者：陈曦</p>
+            <p class="hero-meta">龙泉中学 · 高2020级8班 · 2021—2023</p>
+            <a href="#entries" class="hero-scroll">
+                阅览词条 <span class="arrow">↓</span>
+            </a>
+        </section>
+
+        <!-- Preface Section -->
+        <section class="preface-section" id="preface">
+            <div class="preface-card">
+                <h2>写在《词典》之前</h2>
+                <p>《大词典》这个名字不太cool，甚至有点土，当时取名我也没多想些什么，反正就是编写一个一个的词条，我这人也比较懒，后来也就没改了。不过越是朴素的东西，越能够打动人心，《大词典》最有价值的是它的内涵，以及其承载的回忆，而不是形式。</p>
+                <p>《大词典》所要达到的，是能够让读者在阅读时能够重温一些珍藏的记忆，感受到些许惊艳，快乐，感动或振奋，作为编者，这样的感受更加深刻。</p>
+                <p>有历史的民族不会被遗忘，同样，有回忆的班级也不会被拆散。最初编写《词典》时，我还没有想那么多，单纯觉得编着好玩，但随着词条一个个加入，我发觉其另一方面的价值正在逐渐增加。到现在它已不是一本简简单单的词典，说是历史我觉得也不为过吧。</p>
+                <p>正文内容编者尝试着采用"一本正经地胡说八道"的风格，多用反语和讽刺手法，以增强抒情语气，且多使用细节描写，使文章内容更深刻，增强可读性，并暗中传递作者的思想感情（就是夹带私货）。</p>
+                <p>对于这部《大词典》，我想了，写了，做了，至于它到底如何，还需要各位一起评价，将它还给大众，才能发挥它最大的价值。我所做的，就是以我的视角，帮大家为这个班保留一点东西。</p>
+                <div class="preface-signature">
+                    陈曦<br>2023年4月30日<br>于龙泉驿区
+                </div>
+            </div>
+        </section>
+        
+        <!-- Preface Section -->
+        <section class="preface-section" id="preface">
+            <div class="preface-card">
+                <h2>《大词典》网页版正式完成</h2>
+                <p>在ai大行其道的当下，我得以完成3年前的一个愿望：将《大词典》写入网页</p>
+                <p>光阴如梭，而今我离去成都千里，也早早告别了高中多年。</p>
+                <div class="preface-signature">
+                    陈曦<br>2026年6月6日<br>于北京
+                </div>
+            </div>
+        </section>
+
+        <!-- Doc Header Block (阅前须知等) -->
+        <section id="doc-header-block" style="padding: 20px 0 40px;">
+            <div class="header-card" id="header-content">
+                <!-- Populated by JS from header_html -->
+            </div>
+        </section>
+
+        <!-- Entries Section -->
+        <section id="entries">
+            <div class="section-header">
+                <h2>词条</h2>
+                <span class="line"></span>
+                <span class="count" id="entry-count">共 0 个词条</span>
+            </div>
+            <div id="entries-container">
+                <!-- Populated by JS -->
+                <p style="text-align:center;padding:40px;color:var(--text-muted);">加载中…</p>
+            </div>
+        </section>
+
+        <!-- Appendix Section -->
+        <section class="appendix-section" id="appendix">
+            <div class="section-header">
+                <h2>附录</h2>
+                <span class="line"></span>
+                <span class="count">学术说明</span>
+            </div>
+            <div id="appendix-container">
+                <p style="text-align:center;padding:20px;color:var(--text-muted);">加载中…</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-header">
+                <h2>图鉴</h2>
+                <span class="line"></span>
+                <span class="count">人物 &amp; 手稿</span>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- 人物图 -->
+                <div class="gallery-item">
+                    <img src="陈曦.png" alt="陈曦" loading="lazy">
+                    <div class="caption">陈曦</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="坤 (1).png" alt="坤" loading="lazy">
+                    <div class="caption">坤</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="张科.png" alt="张科" loading="lazy">
+                    <div class="caption">张科</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="杨文俊.png" alt="杨文俊" loading="lazy">
+                    <div class="caption">杨文俊</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="潘瑞.png" alt="潘瑞" loading="lazy">
+                    <div class="caption">潘瑞</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="石志鹏.png" alt="石志鹏" loading="lazy">
+                    <div class="caption">石志鹏</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="黄鑫.png" alt="黄鑫" loading="lazy">
+                    <div class="caption">黄鑫</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sp陈曦.png" alt="陈曦" loading="lazy">
+                    <div class="caption">陈曦</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="石志鹏 (1).png" alt="石志鹏" loading="lazy">
+                    <div class="caption">石志鹏</div>
+                </div>
+                <!-- 手稿扫描 -->
+                <div class="gallery-item">
+                    <img src="1685073410399.9609310.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410499.7297536.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410551.8405763.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410610.4572988.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410668.8910541.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410719.4439541.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410837.8234423.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1685073410876.1229352.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1007828267_53962307.jpg" alt="手稿" loading="lazy">
+                    <div class="caption">手稿</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="divider"></div>
+        <p>大词典 · 坚持客观真理</p>
+        <p>编纂者：陈曦 · 龙泉中学高2020级8班</p>
+        <p>2021 — 2023</p>
+        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:8px;">
+            "见日之光，长乐未央，见日之光，长勿相忘"
+        </p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+    <!-- BGM Player -->
+    <div class="bgm-player" id="bgm-player" title="点击切换曲目">
+        <button class="play-btn" id="bgm-play-btn">▶</button>
+        <span class="track-name" id="bgm-track-name"></span>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top" aria-label="回到顶部">↑</button>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/appendix.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

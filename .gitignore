@@ -1,0 +1,19 @@
+# 备份文件
+大词典备份.zip
+大词典备份/
+新建文件夹/
+
+# 临时文件
+_debug.txt
+_all_paras.txt
+_paras_full.txt
+_verify.txt
+_build.py
+_fix_appendix.py
+_app_debug.txt
+
+# Claude
+.claude/
+
+# 无后缀二进制
+陈曦
