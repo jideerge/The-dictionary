@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comments.css">
 </head>
 <body>
 
@@ -94,6 +95,18 @@
             <div id="entries-container">
                 <!-- Populated by JS -->
                 <p style="text-align:center;padding:40px;color:var(--text-muted);">加载中…</p>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="appendix-section" id="comments">
+            <div class="section-header">
+                <h2>评论区</h2>
+                <span class="line"></span>
+                <span class="count" id="comment-count">说点什么呢</span>
+            </div>
+            <div class="comments-wrapper" id="comments-wrapper">
+                <!-- Populated by comments.js -->
             </div>
         </section>
 
@@ -228,5 +241,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/comments.js"></script>
 </body>
 </html>

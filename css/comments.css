@@ -1,0 +1,340 @@
+/* === 评论区样式 === */
+
+.comments-section {
+    padding: 0 0 60px;
+}
+
+.comments-wrapper {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: 0 1px 6px var(--shadow);
+}
+
+/* 评论表单 */
+.comment-form {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed var(--border-light);
+}
+
+.comment-form-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="url"] {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--page-bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-family: var(--font-sans);
+    outline: none;
+    transition: border-color var(--transition);
+}
+
+.comment-form input:focus {
+    border-color: var(--accent);
+}
+
+.comment-nickname {
+    width: 140px;
+}
+
+.comment-avatar-url {
+    flex: 1;
+    min-width: 200px;
+    max-width: 360px;
+    font-size: 0.8rem !important;
+}
+
+.comment-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--page-bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-family: var(--font-sans);
+    resize: vertical;
+    outline: none;
+    transition: border-color var(--transition);
+    margin-bottom: 8px;
+}
+
+.comment-textarea:focus {
+    border-color: var(--accent);
+}
+
+/* 表情选择器 */
+.emoji-bar {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.emoji-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji-btn:hover {
+    background: var(--card-bg-alt);
+    transform: scale(1.2);
+}
+
+/* 图片上传 */
+.comment-image-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comment-image-preview {
+    max-width: 200px;
+    max-height: 120px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    display: none;
+}
+
+.comment-submit-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.comment-submit {
+    padding: 8px 24px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: var(--font-sans);
+    transition: opacity 0.2s;
+}
+
+.comment-submit:hover {
+    opacity: 0.85;
+}
+
+.comment-submit:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* 头像预设 */
+.avatar-presets {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.avatar-preset {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg-alt);
+    transition: all 0.15s;
+}
+
+.avatar-preset:hover,
+.avatar-preset.active {
+    border-color: var(--accent);
+    transform: scale(1.1);
+}
+
+.avatar-preset img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 评论列表 */
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 12px;
+}
+
+.comment-item .comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    background: var(--card-bg-alt);
+    overflow: hidden;
+}
+
+.comment-item .comment-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comment-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.comment-meta {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.comment-nick {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.comment-time {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.comment-content {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    word-break: break-word;
+}
+
+.comment-content img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 6px;
+}
+
+.comment-like,
+.comment-reply {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 2px 0;
+    font-family: var(--font-sans);
+    transition: color 0.15s;
+}
+
+.comment-like:hover,
+.comment-reply:hover {
+    color: var(--accent);
+}
+
+.comment-like.liked {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* 删除按钮 */
+.comment-del {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    opacity: 0.4;
+    transition: opacity 0.15s;
+    padding: 0 2px;
+    margin-left: auto;
+}
+
+.comment-del:hover {
+    opacity: 1;
+}
+
+/* 回复框 */
+.reply-form {
+    margin-top: 10px;
+    display: none;
+}
+
+.reply-form.active {
+    display: block;
+}
+
+.reply-form .comment-textarea {
+    min-height: 60px;
+    font-size: 0.85rem;
+}
+
+/* 子回复 */
+.comment-replies {
+    margin-left: 52px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 12px;
+    border-left: 2px solid var(--border-light);
+}
+
+/* 加载更多 */
+.comments-loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.comment-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+    .comments-wrapper { padding: 16px; }
+    .comment-replies { margin-left: 24px; padding-left: 8px; }
+    .comment-nickname { width: 100px; }
+    .comment-avatar-url { min-width: 140px; }
+}

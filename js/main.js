@@ -161,6 +161,15 @@ function updateActiveSidebarItem() {
             link.classList.add('active');
         }
     });
+
+    // Update comments for the visible entry
+    if (currentId && typeof showCommentsForEntry === 'function') {
+        const entryId = parseInt(currentId);
+        if (entryId !== window._lastCommentEntry) {
+            window._lastCommentEntry = entryId;
+            showCommentsForEntry(entryId);
+        }
+    }
 }
 
 // ========== Search ==========
@@ -403,6 +412,12 @@ async function init() {
 
     // Render appendix
     renderAppendix();
+
+    // Init comments for first entry
+    if (typeof showCommentsForEntry === 'function') {
+        showCommentsForEntry(1);
+        window._lastCommentEntry = 1;
+    }
 }
 
 // ========== Appendix Rendering ==========
